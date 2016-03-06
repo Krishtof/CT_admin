@@ -1,0 +1,150 @@
+doctype html
+//
+  if lt IE 7html.no-js.lt-ie9.lt-ie8.lt-ie7
+//
+  if IE 7html.no-js.lt-ie9.lt-ie8
+//
+  if IE 8html.no-js.lt-ie9
+//if gt IE 8
+  | [if gt IE 8]
+html.no-js
+  // <![endif]
+  html.no-js(lang='en')
+    head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      title Crowdtalk: Answers delivered.
+      meta(name='description', content='whatever')
+      meta(name='keywords', content='html5 template, css3, one page, animations, agency, portfolio, web design')
+      meta(name='author', content='Kristof Vizy')
+      // Bootstrap
+      link(href='css/bootstrap.min.css', rel='stylesheet')
+      link(href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel='stylesheet')
+      link(rel='shortcut icon', href='favicon.ico')
+      link(href='http://fonts.googleapis.com/css?family=Nunito:400,300,700', rel='stylesheet', type='text/css')
+      link(href='css/styles.css', rel='stylesheet')
+      // Facebook and Twitter integration
+      script(src='js/input.js')
+    body
+      header
+        nav.navbar.navbar-default
+          .container-fluid.navfluid
+            .navbar-header
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              img(alt='Brand', src='img/logo.png')
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        .container-fluid.second_nav
+          .col-md-6.left
+            .row
+              .col-md-12
+                h1 Dashboard
+            .row
+              .col-md-12
+                a 1. Define your Target group &nbsp &nbsp >
+                a  &nbsp &nbsp 2. Fill out your questionnaire &nbsp &nbsp >
+                a  &nbsp &nbsp 3. Set your goal
+          .col-md-6.right
+            .underline-btn cancel
+            .btn-back back
+            .btn-next next
+      section.content
+        .container
+          .row.title
+            .col-md-12
+              .input-group
+                input#title.m-input(type='text')
+                label(for='title') Survey title
+              .input-group
+                input#description.m-input(type='text')
+                label(for='description') Survey description  
+          .row.questions
+            .col-md-12
+              h1(style='margin-top:100px;') Questions
+              .col-md-8.q
+                .input-group
+                  input#question.m-input(type='text')
+                  label(for='question') Question
+              .col-md-4
+                .dropdown
+                  button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                    | Multiple Choice
+                    span.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Dropdown
+                    li
+                      a(href='#') Single textbox
+                    li
+                      a(href='#') Checkbox
+                    li
+                      a(href='#') Multiple Choice              
+                .trash
+              .col-md-12.a
+                .input-group
+                  input#answer.m-input(type='text')
+                  label(for='answer') Option 1                 
+                .input-group
+                  input#answer.m-input(type='text')
+                  label(for='answer') Option 2   
+                .input-group
+                  input#answer.m-input(type='text')
+                  label(for='answer') Option 3   
+            .col-md-12(style='margin-top: 100px')
+              .col-md-8.q
+                .input-group
+                  input#question.m-input(type='text')
+                  label(for='question') Question
+              .col-md-4
+                .dropdown
+                  button.btn.btn-primary.dropdown-toggle(type='button', data-toggle='dropdown')
+                    | Multiple Choice
+                    span.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='#') Dropdown
+                    li
+                      a(href='#') Single textbox
+                    li
+                      a(href='#') Checkbox
+                    li
+                      a(href='#') Multiple Choice              
+                .trash
+              .col-md-12.a
+                .input-group
+                  input#answer.m-input(type='text')
+                  label(for='answer') Option 1                 
+                .input-group
+                  input#answer.m-input(type='text')
+                  label(for='answer') Option 2   
+                .input-group
+                  input#answer.m-input(type='text')
+                  label(for='answer') Option 3
+            .col-md-12
+              .btn-add_q Add new question
+    footer
+      .container
+        .row
+          .col-md-5
+            h1.footer-logo
+              img(src='img/logo-blue.png', alt='Footer Logo Blue')
+            p
+              | - Designed & Developed by 
+              a(href='http://www.crowdtalk.com/') Kristof Vizy
+          .col-md-7
+    // jQuery (necessary for Bootstrap's JavaScript plugins)
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(src='js/jquery.fancybox.pack.js')
+    script(src='js/bootstrap.min.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-73816189-1');ga('send','pageview');
